@@ -1,8 +1,15 @@
+/*-----FONTS-----*/
+@font-face {
+  src: url("../fonts/circular.otf");
+  font-family: "circular";
+}
+
 /* -----HEADER-----*/
 *
 {
 margin: 0;
 padding: 0;
+font-family: "circular";
 }
 
 header
@@ -35,20 +42,19 @@ header
 #menu li
   {
   display: inline;
-  color: lightgrey;
-  text-decoration: none;
   }
 ul
   {
   list-style-type: none;
-  word-spacing: 2em;
+  word-spacing: 1.2em;
   }
 
 li a
   {
     color: rgb(118, 118, 118);
     text-decoration: none;
-    font-size: .8em;
+    font-size: .73em;
+    color: black;
     font-weight: 690;
   }
 
@@ -58,7 +64,7 @@ li a
   display: none;
   }
 
-/* -----H1-----*/
+/*------LES TITRES------*/
 
 span
   {
@@ -66,18 +72,33 @@ span
   font-weight: bold;
   }
 
+
+.title1
+  {
+  width: 100%;
+  }
+
 h1
   {
-  width: 75%;
+  width: 60%;
   display: block;
   margin-top: 8%;
-  margin-left: 6.8%;
+  max-width: 50%;
+  color: rgb(72, 72, 94);
   margin-right: 19%;
   font-size: 1.4em;
   font-weight: 200;
   }
 
-/*-----SECTION 1-----*/
+h2, h3
+  {
+  margin: 10% 0 12% 2.8%;
+  color: rgb(72, 72, 72);
+  font-weight: 400;
+  font-size: 1.2em;
+  }
+
+/*-----INPUT IS SECTION 1-----*/
 
 #input2, #input3, #button1
   {
@@ -88,21 +109,27 @@ h1
   {
   margin: 2em 6em 1.5em 1em;
   border: solid 1px lightgrey;
-  padding: 0.7em 3em;
-  width: 50%;
+  padding: 1.1em 3em;
+  max-width:50%;
   text-align: left;
+  font-size: 1em;
+  box-shadow: 2px 2px 2px silver;
   }
 
-/*-----SECTION 2-----*/
+/*-----FIRST, SECOND AND THIRD PART OF MOBILE DISPLAY IS SECTION 2-----*/
 
-#container
+.container
 {
 width: 100%;
 display: inline-flex;
 }
 
+.figure1, p, section h1, h3
+  {
+  margin-left: 4%;
+  }
 
-.figure1 img
+.figure1
   {
   width: 95%;
   height: 40%;
@@ -112,16 +139,184 @@ display: inline-flex;
   p
   {
   width: 95%;
-  font-size: .9em;
+  font-size: .85em;
   }
 
-#article1, #article2
+.article1
   {
   width: 100%;
   justify-content: center;
   }
 
-#article3, #article4
+.article3
   {
   display: none;
   }
+
+ /*PART 4 */
+
+  .article2
+    {
+      margin-right: 0%;
+      width: 100%;
+      height: 25%;
+    }
+
+
+  .figureDestination
+    {
+    width: 10%;
+    margin-left: 5%;
+    }
+
+    .container a
+      {
+      text-decoration: none;
+      color: rgb(72, 72, 72);
+      font-weight: 600;
+      }
+
+
+  .figure2
+    {
+    width: 900%;
+    }
+
+  .figure2 a
+      {
+      text-align: left;
+
+      }
+    /*Finale Part*/
+
+  .bigcontainer
+    {
+    width: 100%;
+    display: inline-flex;
+    }
+
+    .figureFinale
+      {
+      width: 100%;
+      margin-top: 16%;
+      }
+
+    #titreFinale
+        {
+        font-weight: bolder;
+        font-size: 1.4em;
+        margin-right: 25%;
+        margin-bottom: 5%;
+        }
+    #p2
+      {
+      font-size: 1.1em;
+      font-weight: 100;
+      width: 78%;
+      }
+
+      .container2
+        {
+        display: block;
+        }
+      .bouton
+
+      {
+      border: 2px solid rgb(0, 132, 137);
+      background-color: rgb(0, 132, 137);
+      margin: 4% auto 8% 4%;
+      border-radius: 4%;
+      padding: 2.5% 5% 2.5% 3%;
+      max-width: 59%;
+      display: flex;
+      }
+
+
+      .bouton a
+        {
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        font-size: 1.1em;
+        margin-left: 8%;
+        }
+
+      /*-----FOOTER-----*/
+
+      #hr1
+        {
+        color: rgb(255, 255, 255);
+        margin: 23% 0 7% 0;
+        }
+
+      #hr2
+        {
+        color: rgb(255, 255, 255);
+        margin: 15% 10% 2% 10%;
+        }
+
+      /*-----SELECTOR's FOOTER-----*/
+
+        footer
+          {
+
+          width: 100%;
+          }
+
+
+
+        .ulFooter, nav h4, #hr3, #listFooter
+          {
+          display: none;
+          }
+
+        .pays, .devise
+          {
+          width: 41.9%;
+          font-size: .85em;
+          margin-left: 7%;
+          border: 1px solid rgb(219, 219, 219);
+          padding: 1em 3.3em ;
+          background-color: white;
+          }
+
+          .footerMobile
+            {
+            width: 100%;
+            display: flex;
+            margin-left: 2%;
+            color: rgb(118, 118, 118);
+            font-size: 1em;
+            }
+
+            .footerMobile ul
+              {
+              display: flex;
+              }
+
+            #ulMobile a
+              {
+                color: rgb(118, 118, 118);
+                font-size: .9em;
+              }
+
+            #ulMobile li
+                {
+                margin-right: .5em;
+                }
+
+              #ulSvg li a svg
+                {
+                margin-right: .5em;
+                }
+
+          .footerMobile svg
+            {
+            align-items: center;
+
+            }
+
+          .footerMobile p
+            {
+            line-height: 27px;
+            }
